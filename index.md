@@ -32,3 +32,8 @@
 ## Advanced Configuration
 
 * [Laravel Mix Options](options)
+
+
+## License
+
+* [MIT](license)
