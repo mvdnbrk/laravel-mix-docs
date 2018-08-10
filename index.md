@@ -1,32 +1,32 @@
 - ## Overview
-    - [Basic Example](basic-example)
-    - [Installation](installation)
-    - [Laravel Workflow](workflow)
-    - [FAQ](faq)
-    - [Troubleshooting](troubleshooting)
+    - [Basic Example](/docs/{{version}}/basic-example)
+    - [Installation](/docs/{{version}}/installation)
+    - [Laravel Workflow](/docs/{{version}}/workflow)
+    - [FAQ](/docs/{{version}}/faq)
+    - [Troubleshooting](/docs/{{version}}/troubleshooting)
 
 - ## API
-    - [JavaScript](mixjs)
-    - [Library Code Splitting](extract)
-    - [BrowserSync](browsersync)
-    - [Hot Module Replacement](hot-module-replacement)
-    - [Versioning](versioning)
-    - [CSS Preprocessors](css-preprocessors)
-    - [Copying Files](copying-files)
-    - [OS Notifications](os-notifications)
-    - [Concatenation and Minification](concatenation-and-minification)
-    - [Autoloading](autoloading)
-    - [Event Hooks](event-hooks)
-    - [Quick webpack Configuration](quick-webpack-configuration)
-    - [Extending Mix](extending-mix)
+    - [JavaScript](/docs/{{version}}/mixjs)
+    - [Library Code Splitting](/docs/{{version}}/extract)
+    - [BrowserSync](/docs/{{version}}/browsersync)
+    - [Hot Module Replacement](/docs/{{version}}/hot-module-replacement)
+    - [Versioning](/docs/{{version}}/versioning)
+    - [CSS Preprocessors](/docs/{{version}}/css-preprocessors)
+    - [Copying Files](/docs/{{version}}/copying-files)
+    - [OS Notifications](/docs/{{version}}/os-notifications)
+    - [Concatenation and Minification](/docs/{{version}}/concatenation-and-minification)
+    - [Autoloading](/docs/{{version}}/autoloading)
+    - [Event Hooks](/docs/{{version}}/event-hooks)
+    - [Quick webpack Configuration](/docs/{{version}}/quick-webpack-configuration)
+    - [Extending Mix](/docs/{{version}}/extending-mix)
 
 - ## Custom Recipes
-    - [LiveReload](livereload)
-    - [jQuery UI](jquery-ui)
+    - [LiveReload](/docs/{{version}}/livereload)
+    - [jQuery UI](/docs/{{version}}/jquery-ui)
 
 - ## Advanced Configuration
-    - [Laravel Mix Options](options)
+    - [Laravel Mix Options](/docs/{{version}}/options)
 
 
 - ## License
-    - [MIT](license)
+    - [MIT](/docs/{{version}}/license)
