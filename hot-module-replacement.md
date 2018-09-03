@@ -88,3 +88,16 @@ or:
 Laravel Mix includes the popular `vue-loader` package, which means, for SPAs, there's nothing for you to do.
 It'll all work seamlessly out of the box!
 
+
+### Setting options
+
+If you wish to run Hot Module Replacement on a different host or port you may override these within `mix.options()`:
+
+```
+mix.options({
+    hmrOptions: {
+        host: 'example.com'
+        port: 8080
+    }
+})
+```
