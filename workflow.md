@@ -52,7 +52,11 @@ Excellent! Next, let's get to work. To watch your JavaScript for changes, run:
 npm run watch
 ```
 
-Laravel ships with a `./resources/assets/js/components/ExampleComponent.vue` file. Give it a tweak, and wait for the OS notification, which signals that the compilation has completed. Great!
+Laravel ships with a `ExampleComponent.vue` file which you can find in the  components folder:
+```markup
+./resources/assets/js/components/ExampleComponent.vue
+```
+Give it a tweak, and wait for the OS notification, which signals that the compilation has completed. Great!
 
 > Tip: You may also use `mix.browserSync('myapp.test')` to automatically reload the browser when any relevant file in your Laravel app is changed.
 
