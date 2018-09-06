@@ -93,7 +93,7 @@ It'll all work seamlessly out of the box!
 
 If you wish to run Hot Module Replacement on a different host or port you may override these within `mix.options()`:
 
-```
+```js
 mix.options({
     hmrOptions: {
         host: 'example.com'
