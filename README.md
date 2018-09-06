@@ -1,4 +1,8 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-mix.svg" alt="Laravel Mix"></p>
+<p align="center">
+  <a href="https://laravel-mix.com/docs">
+      <img src="https://laravel.com/assets/img/components/logo-mix.svg" alt="Laravel Mix">
+  </a>
+</p>
 
 # Laravel Mix Documentation
 
