@@ -5,8 +5,8 @@ jQuery UI is a toolkit for rendering common components, such as datepickers, dra
 ## Build Your `webpack.mix.js` Configuration
 
 ```js
-mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+mix.js('resources/js/app.js', 'public/js')
+   .sass('resources/sass/app.scss', 'public/css');
 ```
 
 ## Install `jquery-ui`
@@ -18,7 +18,7 @@ npm install jquery-ui --save-dev
 ## Load Your Desired Widget
 
 ```js
-// resources/assets/js/app.js
+// resources/js/app.js
 
 import $ from 'jquery';
 window.$ = window.jQuery = $;
@@ -29,7 +29,7 @@ import 'jquery-ui/ui/widgets/datepicker.js';
 ## Load CSS
 
 ```css
-// resources/assets/sass/app.scss
+// resources/sass/app.scss
 
 @import '~jquery-ui/themes/base/all.css';
 ```
@@ -37,6 +37,6 @@ import 'jquery-ui/ui/widgets/datepicker.js';
 ## Trigger the UI Plugin
 
 ```js
-// resources/assets/js/app.js
+// resources/js/app.js
 $('#datepicker').datepicker();
 ```

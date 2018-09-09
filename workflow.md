@@ -21,8 +21,8 @@ Think of this file as your home base for all front-end configuration.
 ```js
 let mix = require('laravel-mix');
 
-mix.js('resources/assets/js/app.js', 'public/js')
-    .sass('resources/assets/sass/app.scss', 'public/css');
+mix.js('resources/js/app.js', 'public/js')
+    .sass('resources/sass/app.scss', 'public/css');
 ```
 
 By default, we've enabled JavaScript ES2017 + module bundling, as well as Sass compilation.
@@ -54,7 +54,7 @@ npm run watch
 
 Laravel ships with a `ExampleComponent.vue` file which you can find in the  components folder:
 ```markup
-./resources/assets/js/components/ExampleComponent.vue
+./resources/js/components/ExampleComponent.vue
 ```
 Give it a tweak, and wait for the OS notification, which signals that the compilation has completed. Great!
 

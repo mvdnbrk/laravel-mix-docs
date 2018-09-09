@@ -18,7 +18,7 @@ mix.webpackConfig({
     resolve: {
         modules: [
             'node_modules',
-            path.resolve(__dirname, 'vendor/laravel/spark/resources/assets/js')
+            path.resolve(__dirname, 'vendor/laravel/spark/resources/js')
         ]
     }
 });
