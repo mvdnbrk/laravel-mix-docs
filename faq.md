@@ -127,7 +127,7 @@ mix.autoload({
 
 If, upon updating your dependencies, your compile fails with the message:
 
-```
+```bash
 Module build failed: Error:
 
 Vue packages version mismatch:
@@ -138,7 +138,7 @@ Vue packages version mismatch:
 
 This means your `vue` and `vue-template-compiler` dependencies are out of sync. Per Vue's instructions, the version number for both of these dependencies must be identical. Update as needed to fix the problem:
 
-```
+```bash
 npm update vue
 
 // or
