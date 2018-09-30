@@ -15,12 +15,12 @@ export NODE_ENV=production && webpack --progress --hide-modules
 It's highly recommended that you add the following NPM scripts to your `package.json` file. Please note that Laravel includes these out of the box.
 
 ```js
-  "scripts": {
+"scripts": {
     "dev": "NODE_ENV=development webpack --progress --hide-modules",
     "watch": "NODE_ENV=development webpack --watch --progress --hide-modules",
     "hot": "NODE_ENV=development webpack-dev-server --inline --hot",
     "production": "NODE_ENV=production webpack --progress --hide-modules"
-  },
+},
 ```
 
 ### I'm using a VM, and webpack isn't picking up my file changes.
