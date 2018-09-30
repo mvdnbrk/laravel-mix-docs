@@ -42,7 +42,7 @@ $primary: grey
     background: $primary
 ```
 
-> Tip: For Sass compilation, you may freely use the `.sass` and `.scss` syntax styles.
+> {tip} For Sass compilation, you may freely use the `.sass` and `.scss` syntax styles.
 
 Compile this down as usual \(`npm run webpack`\), and you'll find a `./public/css/app.css` file that contains:
 
@@ -108,7 +108,7 @@ Imagine that we want to compile a bit of Sass that includes a relative url to an
 }
 ```
 
-> **Tip:** Absolute paths for `url()`s will of course be excluded from url-rewriting. As such, `url('/images/thing.png')` or `url('http://example.com/images/thing.png')` won't be touched.
+> {tip} Absolute paths for `url()`s will of course be excluded from url-rewriting. As such, `url('/images/thing.png')` or `url('http://example.com/images/thing.png')` won't be touched.
 
 Notice that relative URL? By default, Laravel Mix and webpack will find `thing.png`, copy it to your `public/images` folder, and then rewrite the `url()` within your generated stylesheet. As such, your compiled CSS will be:
 
@@ -135,7 +135,7 @@ With this addition to your `webpack.mix.js` file, we will no longer match `url()
 }
 ```
 
-> As an added bonus, when you disable url processing, your Webpack Sass compilation and extraction can compile far more quickly.
+> {tip} As an added bonus, when you disable url processing, your Webpack Sass compilation and extraction can compile far more quickly.
 
 ### PostCSS Plugins
 
@@ -215,4 +215,4 @@ If you do not wish Mix and Webpack to process your Sass in any way, you may inst
 mix.standaloneSass('resources/sass/app.scss', 'public/css');
 ```
 
-> **Note:** If you are using standaloneSass while watching for file changes with `npm run watch` then you will need to prefix imported files with underscores in order to flag them as partials (e.g. _header.scss, _alert.scss). Failing to do this will result in Sass compilation errors and/or extraneous CSS files.
+> {note} If you are using standaloneSass while watching for file changes with `npm run watch` then you will need to prefix imported files with underscores in order to flag them as partials (e.g. _header.scss, _alert.scss). Failing to do this will result in Sass compilation errors and/or extraneous CSS files.

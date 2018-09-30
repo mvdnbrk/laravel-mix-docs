@@ -58,7 +58,7 @@ Laravel ships with a `ExampleComponent.vue` file which you can find in the  comp
 ```
 Give it a tweak, and wait for the OS notification, which signals that the compilation has completed. Great!
 
-> Tip: You may also use `mix.browserSync('myapp.test')` to automatically reload the browser when any relevant file in your Laravel app is changed.
+> {tip} You may also use `mix.browserSync('myapp.test')` to automatically reload the browser when any relevant file in your Laravel app is changed.
 
 ### Step 5: Update Your View
 

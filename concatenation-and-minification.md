@@ -42,7 +42,7 @@ There are a few things worth noting here:
 2. Once again, the minification will only take place during a production build. \(`export NODE_ENV=production`\).
 3. There is no need to call `mix.combine(['one.js', 'two.js'], 'merged.js').minify('merged.js');`Just stick with the single `mix.combine()` call. It'll take care of both.
 
-> **Important**: Please note that minification is only available for CSS and JavaScript files. The minifier will not understand any other provided file type.
+> {note} Please note that minification is only available for CSS and JavaScript files. The minifier will not understand any other provided file type.
 
 
 
