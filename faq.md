@@ -35,7 +35,7 @@ To **poll** the VM's filesystem, update your NPM script to use the `--watch-poll
 ```js
 "scripts": {
     "watch": "NODE_ENV=development webpack --watch --watch-poll",
-  }
+ }
 ```
 
 To **forward** file change notifications to the VM, simply install [vagrant-fsnotify](https://github.com/adrienkohlbecker/vagrant-fsnotify) on the host machine:
