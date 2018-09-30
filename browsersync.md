@@ -21,6 +21,12 @@ You may pass either a string (proxy) or object (BrowserSync settings) to this me
 
 Other options can be seen in the [Browsersync Documentation](https://browsersync.io/docs/options/).
 
-Now, boot up the dev server (`npm run watch`), and you're all set go!
+Now, boot up the dev server, run: 
+
+```bash
+npm run watch
+```
+
+And you're all set to go!
 
 
