@@ -11,7 +11,7 @@ mix.js('resources/js/app.js', 'public/js')
 
 ## Install `jquery-ui`
 
-```
+```bash
 npm install jquery-ui --save-dev
 ```
 
