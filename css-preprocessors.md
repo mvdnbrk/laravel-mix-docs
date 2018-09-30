@@ -172,7 +172,8 @@ mix.sass('resources/sass/app.scss', 'public/css')
    });
 ```
 
-Done! You may now use and compile custom CSS properties (if that's your thing). For example, if `resources/sass/app.scss` contains...
+Done! You may now use and compile custom CSS properties (if that's your thing).  
+For example, if `resources/sass/app.scss` contains...
 
 ```css
 :root {
