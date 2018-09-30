@@ -71,7 +71,7 @@ new Vue({
 
 Above, we import Vue \(you'll want to first run `npm install vue --save-dev`\), require a `Notification` Vue component, and then build up our root Vue instance.
 
-**./resources/js/components/Notification.vue**
+#####  ./resources/js/components/Notification.vue
 
 ```js
 <template>
@@ -99,7 +99,7 @@ Above, we import Vue \(you'll want to first run `npm install vue --save-dev`\), 
 
 If you're familiar with Vue, this should all look very familiar, so we'll move on.
 
-**./webpack.mix.js**
+##### ./webpack.mix.js
 
 ```js
 let mix = require('laravel-mix');
