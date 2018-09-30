@@ -135,7 +135,9 @@ Vue packages version mismatch:
 * vue-template-compiler@2.5.15
 ```
 
-This means your `vue` and `vue-template-compiler` dependencies are out of sync. Per Vue's instructions, the version number for both of these dependencies must be identical. Update as needed to fix the problem:
+This means your `vue` and `vue-template-compiler` dependencies are out of sync.  
+Per Vue's instructions, the version number for both of these dependencies must be identical.  
+Update as needed to fix the problem:
 
 ```bash
 npm update vue
