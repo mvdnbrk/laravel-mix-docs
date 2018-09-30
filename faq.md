@@ -74,8 +74,8 @@ body {
 
 When referencing a relative path, always think in terms of the current file. As such, webpack will look for `resources/img/example.jpg`. If it can't find it, it'll then begin searching for the file location, including within `node_modules`. If it still can't be found, you'll receive the error:
 
-```
- ERROR  Failed to compile with 1 errors
+```bash
+ERROR  Failed to compile with 1 errors
 
 This dependency was not found in node_modules:
 ```
@@ -85,7 +85,7 @@ You have two possible solutions:
 1. Make sure that `resources/img/example.jpg` exists.
 2. Add the following to your `webpack.mix.js` file to disable CSS url() processing.
 
-```
+```js
 mix.sass('resources/sass/app.scss', 'public/css')
    .options({
         processCssUrls: false

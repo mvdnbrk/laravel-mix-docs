@@ -4,7 +4,7 @@ While Laravel Mix ships with Browsersync support out of the box, you may prefer 
 
 ## 1. Install webpack-livereload-plugin
 
-```
+```bash
 npm install webpack-livereload-plugin@1 --save-dev
 ```
 
@@ -29,10 +29,10 @@ Although LiveReload works well with its defaults, a list of available plugin opt
 Finally, we need to install LiveReload.js. You may do so through the [LiveReload Chrome plugin](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei),
 or by adding the following code just before the closing `</body>` tag in your main site template:
 
-```blade
-    @if(config('app.env') == 'local')
-        <script src="http://localhost:35729/livereload.js"></script>
-    @endif
+```html
+@if(config('app.env') == 'local')
+    <script src="http://localhost:35729/livereload.js"></script>
+@endif
 ```
 
 ## 4. Run the Dev Server
