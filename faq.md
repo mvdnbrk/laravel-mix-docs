@@ -48,14 +48,13 @@ Now you may [configure](https://github.com/adrienkohlbecker/vagrant-fsnotify#bas
 
 ```yaml
 folders:
-    -
-        map: /Users/jeffrey/Code/laravel
-        to: /home/vagrant/Code/laravel
-        options:
-            fsnotify: true
-            exclude:
-                - node_modules
-                - vendor
+    - map: ~/code/laravel
+      to: /home/vagrant/code/laravel
+      options:
+          fsnotify: true
+          exclude:
+              - node_modules
+              - vendor
 ```
 
 Once your vagrant machine is started, simply run `vagrant fsnotify` on the host machine to forward all file changes to the VM. You may then run `npm run watch` inside the VM and have your changes automatically picked up.
