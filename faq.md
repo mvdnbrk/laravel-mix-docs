@@ -67,7 +67,7 @@ Let's imagine that you have a relative path to an asset that doesn't exist in yo
 
 ```css
 body {
-  background: url('../img/example.jpg');
+    background: url('../img/example.jpg');
 }
 ```
 
@@ -103,8 +103,8 @@ Through its `ProvidePlugin` plugin, webpack allows you to automatically load mod
 
 ```js
 new webpack.ProvidePlugin({
-  $: 'jquery',
-  jQuery: 'jquery'
+    $: 'jquery',
+    jQuery: 'jquery'
 });
 
 // in a module
@@ -117,8 +117,8 @@ While Laravel Mix automatically loads jQuery for you (exactly as the example abo
 
 ```js
 mix.autoload({
-  jquery: ['$', 'window.jQuery', 'jQuery'], // more than one
-  moment: 'moment' // only one
+    jquery: ['$', 'window.jQuery', 'jQuery'], // more than one
+    moment: 'moment' // only one
 });
 ```
 
