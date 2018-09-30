@@ -18,7 +18,6 @@ npm install
 If you come across a failure message like this one...
 
 ```bash
-
 These dependencies were not found:
 
 * /Users/you/Sites/folder/resources/js/app.js
