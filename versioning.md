@@ -2,7 +2,7 @@
 
 ```js
 mix.js('src', 'output')
-   .version([]);
+   .version();
 ```
 
 To assist with long-term caching, Laravel Mix provides the `mix.version()` method, which enables file hashing. such as `app.js?id=8e5c48eadbfdd5458ec6`. This is useful for cache-busting. Imagine that your server automatically caches scripts for a year, to improve performance. That's great, but, each time you make a change to your application code, you need some way to instruct the server to bust the cache. This is typically done through the use of query strings, or file hashing.
