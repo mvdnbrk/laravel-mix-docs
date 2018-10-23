@@ -17,7 +17,9 @@ One solution is to isolate, or extract, your vendor libraries into their own fil
 mix.extract(['vue', 'jquery']);
 ```
 
-The `extract` method expects an array of vendor libraries that you wish to extract from your main bundle file. With this adjustment, the source code for both Vue and jQuery will be located in `vendor.js`, rather than `app.js`. Should you, in the future, need to make a small change to your application JavaScript, it will not affect the larger vendor libraries. Those will remain cached, long-term. Nifty!
+The `extract` method expects an array of vendor libraries that you wish to extract from your main bundle file. With this adjustment, the source code for both Vue and jQuery will be located in `vendor.js`, rather than `app.js`. Should you, in the future, need to make a small change to your application JavaScript, it will not affect the larger vendor libraries. Those will remain cached, long-term. Nifty! 
+
+> It is important to note that libraries extracted like this will not be subject to [tree-shaking](https://webpack.js.org/guides/tree-shaking/). 
 
 Once you run webpack to compile your code, you'll find three new files. You may reference these at the bottom of your HTML, per usual.
 
