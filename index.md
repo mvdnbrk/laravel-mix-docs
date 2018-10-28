@@ -17,7 +17,7 @@
     - [Concatenation and Minification](/docs/{{version}}/concatenation-and-minification)
     - [Autoloading](/docs/{{version}}/autoloading)
     - [Event Hooks](/docs/{{version}}/event-hooks)
-    - [Quick webpack Configuration](/docs/{{version}}/quick-webpack-configuration)
+    - [Quick Webpack Configuration](/docs/{{version}}/quick-webpack-configuration)
     - [Extending Mix](/docs/{{version}}/extending-mix)
 
 - ## Custom Recipes
