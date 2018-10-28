@@ -1,4 +1,4 @@
-# Quick webpack Configuration
+# Quick Webpack Configuration
 
 ```js
  mix.webpackConfig({} || cb);
