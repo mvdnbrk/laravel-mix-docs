@@ -5,7 +5,7 @@
     - [FAQ](/docs/{{version}}/faq)
     - [Troubleshooting](/docs/{{version}}/troubleshooting)
 
-- ## Overview
+- ## API
     - [JavaScript](/docs/{{version}}/mixjs)
     - [Library Code Splitting](/docs/{{version}}/extract)
     - [BrowserSync](/docs/{{version}}/browsersync)
