@@ -5,7 +5,7 @@
     - [FAQ](/docs/{{version}}/faq)
     - [Troubleshooting](/docs/{{version}}/troubleshooting)
 
-- ## API
+- ## Overview
     - [JavaScript](/docs/{{version}}/mixjs)
     - [Library Code Splitting](/docs/{{version}}/extract)
     - [BrowserSync](/docs/{{version}}/browsersync)
@@ -18,7 +18,6 @@
     - [Autoloading](/docs/{{version}}/autoloading)
     - [Event Hooks](/docs/{{version}}/event-hooks)
     - [Quick webpack Configuration](/docs/{{version}}/quick-webpack-configuration)
-    - [Extending Mix](/docs/{{version}}/extending-mix)
 
 - ## Custom Recipes
     - [LiveReload](/docs/{{version}}/livereload)
@@ -26,7 +25,6 @@
 
 - ## Advanced Configuration
     - [Laravel Mix Options](/docs/{{version}}/options)
-
 
 - ## License
     - [MIT](/docs/{{version}}/license)

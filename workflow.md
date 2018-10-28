@@ -21,8 +21,8 @@ Think of this file as your home base for all front-end configuration.
 ```js
 let mix = require('laravel-mix');
 
-mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+mix.js('resources/assets/js/app.js', 'public/js')
+    .sass('resources/assets/sass/app.scss', 'public/css');
 ```
 
 By default, we've enabled JavaScript ES2017 + module bundling, as well as Sass compilation.
@@ -52,13 +52,9 @@ Excellent! Next, let's get to work. To watch your JavaScript for changes, run:
 npm run watch
 ```
 
-Laravel ships with a `ExampleComponent.vue` file which you can find in the  components folder:
-```markup
-./resources/js/components/ExampleComponent.vue
-```
-Give it a tweak, and wait for the OS notification, which signals that the compilation has completed. Great!
+Laravel ships with a `./resources/assets/js/components/Example.vue` file. Give it a tweak, and wait for the OS notification, which signals that the compilation has completed. Great!
 
-> {tip} You may also use `mix.browserSync('myapp.test')` to automatically reload the browser when any relevant file in your Laravel app is changed.
+> Tip: You may also use `mix.browserSync('myapp.dev')` to automatically reload the browser when any relevant file in your Laravel app is changed.
 
 ### Step 5: Update Your View
 
@@ -75,7 +71,7 @@ Again, Laravel ships with a welcome page. We can use this for our demo. Update i
     </head>
     <body>
         <div id="app">
-            <example-component></example-component>
+            <example></example>
         </div>
 
         <script src="{{ mix('js/app.js') }}"></script>
