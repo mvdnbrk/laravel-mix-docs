@@ -1,6 +1,7 @@
 # Basic Example
 
-Laravel Mix is a clean layer on top of webpack to make the 80% use case laughably simple to execute. Most would agree that, though incredibly powerful, webpack ships with a steep learning curve. But what if you didn't have to worry about that?
+Laravel Mix is a clean layer on top of webpack to make the 80% use case laughably simple to execute.  
+Most would agree that, though incredibly powerful, webpack ships with a steep learning curve. But what if you didn't have to worry about that?
 
 Have a look at a basic `webpack.mix.js` file. Let's imagine that we only desire JavaScript \(ES2015 with modules\), and Sass compilation:
 

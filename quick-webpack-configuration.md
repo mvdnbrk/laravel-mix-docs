@@ -4,7 +4,8 @@
  mix.webpackConfig({} || cb);
 ```
 
-While, of course, you're free to edit the provided `webpack.config.js` file, in certain settings, it's easier to modify or override the default settings directly from your `webpack.mix.js` file. This is particularly true for Laravel apps, where, by default, the `webpack.config.js` isn't available in the project root.
+While, of course, you're free to edit the provided `webpack.config.js` file, in certain settings, it's easier to modify or override the default settings directly from your `webpack.mix.js` file.  
+This is particularly true for Laravel apps, where, by default, the `webpack.config.js` isn't available in the project root.
 
 As an example, perhaps you want to add a custom array of modules that should be automatically loaded by webpack. You have two options in this scenario:
 
@@ -18,7 +19,7 @@ mix.webpackConfig({
     resolve: {
         modules: [
             'node_modules',
-            path.resolve(__dirname, 'vendor/laravel/spark/resources/js')
+            path.resolve(__dirname, 'vendor/laravel/spark/resources/assets/js')
         ]
     }
 });

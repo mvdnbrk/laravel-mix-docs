@@ -18,9 +18,10 @@ npm install
 If you come across a failure message like this one...
 
 ```bash
+
 These dependencies were not found:
 
-* /Users/you/Sites/folder/resources/js/app.js
+* /Users/you/Sites/folder/resources/assets/js/app.js
 ```
 
 ...then you're likely using npm 5.2 (`npm -v`). This version introduced a bug that caused installation errors for Mix. The issue has been fixed as of npm 5.3. Please upgrade, and then reinstall your `package.json` dependencies from scratch:

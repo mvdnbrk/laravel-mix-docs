@@ -7,7 +7,8 @@ mix.minify('src');
 mix.minify(['src']);
 ```
 
-If used properly, Laravel Mix and webpack should take care of all the necessary module bundling and minification for you. However, you may have some legacy code or vendor libraries that need to be concatenated and minified. Not a problem.
+If used properly, Laravel Mix and webpack should take care of all the necessary module bundling and minification for you.  
+However, you may have some legacy code or vendor libraries that need to be concatenated and minified. Not a problem.
 
 ### Combine Files
 
@@ -17,11 +18,13 @@ Consider the following snippet:
 mix.combine(['one.js', 'two.js'], 'merged.js');
 ```
 
-This will naturally merge `one.js` and `two.js` into a single file, called `merged.js`. As always, during development, that merged file will remain uncompressed. However, for production \(`export NODE_ENV=production`\), this command will additionally minify `merged.js`.
+This will naturally merge `one.js` and `two.js` into a single file, called `merged.js`.  
+As always, during development, that merged file will remain uncompressed. However, for production \(`export NODE_ENV=production`\), this command will additionally minify `merged.js`.
 
 #### Combine Files With Babel Compilation
 
-If you need to concatenate JavaScript files that have been written in ES2015, you may update your `mix.combine()` call to `mix.babel()`. The method signature is identical. The only difference is that, after the files have been concatenated, Laravel Mix will perform Babel compilation on the result to transform the code to vanilla JavaScript that all browsers can understand.
+If you need to concatenate JavaScript files that have been written in ES2015, you may update your `mix.combine()` call to `mix.babel()`.  
+The method signature is identical. The only difference is that, after the files have been concatenated, Laravel Mix will perform Babel compilation on the result to transform the code to vanilla JavaScript that all browsers can understand.
 
 ```js
 mix.babel(['one.js', 'two.js'], 'merged.js');
