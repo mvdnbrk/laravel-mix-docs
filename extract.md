@@ -29,7 +29,7 @@ Once you run webpack to compile your code, you'll find three new files. You may 
 
 In effect, we pay a small HTTP request penalty, in exchange for improved long-term caching.
 
-### What's That Manifest File?
+## What's That Manifest File?
 
 webpack compiles with a small bit of run-time code, to assist with its job. When not using `mix.extract()`, this code is invisible to you, and lives inside your bundle file. However, if we want to split our code and allow for long-term caching, that runtime code needs to live somewhere. As such, mix will extract it to its own file as well. This way, both your vendor and manifest files can be cached as long as possible.
 
