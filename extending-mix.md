@@ -18,7 +18,9 @@ mix.extend('foo', function(webpackConfig, ...args) {
 mix.js('src', 'output').foo('some-value');
 ```
 
-In the example above, we can see that `mix.extend()` accepts two parameters: the name that should be used when triggering your component, and a callback function or class that registers and organizes the necessary webpack logic. Behind the scenes, Mix will trigger this callback function once the underlying webpack configuration object has been constructed. This will give you a chance to insert or override any settings that are necessary.
+In the example above, we can see that `mix.extend()` accepts two parameters: the name that should be used when triggering your component, and a callback function or class that registers and organizes the necessary webpack logic.
+
+Behind the scenes, Mix will trigger this callback function once the underlying webpack configuration object has been constructed. This will give you a chance to insert or override any settings that are necessary.
 
 While a simple callback function may be useful for quick extensions, in most scenarios, you'll likely want to build a full component class, like so:
 

@@ -62,7 +62,8 @@ Give it a tweak, and wait for the OS notification, which signals that the compil
 
 ### Step 5: Update Your View
 
-Again, Laravel ships with a welcome page. We can use this for our demo. Update it to:
+Again, Laravel ships with a welcome page. We can use this for our demo.  
+Update it to:
 
 ```html
 <!DOCTYPE html>

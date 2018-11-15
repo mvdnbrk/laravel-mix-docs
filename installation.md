@@ -33,7 +33,8 @@ You should now have the following directory structure:
 * `webpack.mix.js`
 
 
-`webpack.mix.js` is your configuration layer on top of webpack. Most of your time will be spent here.
+The `webpack.mix.js` file is your configuration layer on top of webpack.  
+Most of your time will be spent here.
 
 Head over to your webpack.mix.js file:
 
@@ -45,7 +46,9 @@ mix.js('src/app.js', 'dist')
    .setPublicPath('dist');
 ```
 
-Take note of the source paths. You're free to amend the paths to match your preferred structure, but if you're happy with our defaults simply run `mkdir src && touch src/app.{js,scss}` to create the files/directories. You're all set now. Compile everything down by running `node_modules/.bin/webpack` from the command line. You should now see:
+Take note of the source paths. You're free to amend the paths to match your preferred structure, but if you're happy with our defaults simply run `mkdir src && touch src/app.{js,scss}` to create the files/directories. You're all set now. Compile everything down by running `node_modules/.bin/webpack` from the command line.
+
+You should now see:
 
 * `dist/app.css`
 * `dist/app.js`
