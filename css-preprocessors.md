@@ -165,24 +165,24 @@ It's possible, however, that you'd like to apply [additional PostCSS plugins](ht
 
 ```js
 mix.sass('resources/sass/app.scss', 'public/css')
-   .options({
-       postCss: [
-            require("postcss-custom-properties")
-       ]
-   });
+    .options({
+        postCss: [
+            require('postcss-custom-properties')
+        ]
+    });
 ```
 
 To pass options to a PostCSS plugin, simply provide them as an argument to the plugin's `require` statement, like so:
 
 ```js
 mix.sass('resources/sass/app.scss', 'public/css')
-   .options({
+    .options({
         postCss: [
-            require('postcss-sprites')({
-            	spritePath: '../images/'
+            require('postcss-custom-properties')({
+                preserve: false
             })
         ]
-   });
+    });
 ```
 
 Done! You may now use and compile custom CSS properties (if that's your thing).  
