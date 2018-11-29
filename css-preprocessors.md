@@ -111,7 +111,7 @@ Notice that relative URL? By default, Laravel Mix and webpack will find `thing.p
 
 ```css
 .example {
-    background: url(/images/thing.png?d41d8cd98f00b204e9800998ecf8427e);
+    background: url('/images/thing.png?d41d8cd98f00b204e9800998ecf8427e');
 }
 ```
 
@@ -128,7 +128,7 @@ With this addition to your `webpack.mix.js` file, we will no longer match `url()
 
 ```css
 .example {
-    background: url("../images/thing.png");
+    background: url('../images/thing.png');
 }
 ```
 
