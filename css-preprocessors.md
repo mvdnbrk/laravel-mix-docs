@@ -48,7 +48,7 @@ Compile this down as usual \(`npm run webpack`\), and you'll find a `./public/cs
 
 ```css
 .app {
-  background: grey;
+    background: grey;
 }
 ```
 
@@ -56,8 +56,8 @@ Compile this down as usual \(`npm run webpack`\), and you'll find a `./public/cs
 
 Behind the scenes, Laravel Mix of course defers to Node-Sass, Less, and Stylus to compile your Sass and Less files, respectively. From time to time, you may need to override the default options that we pass to them. You may provide these as the third argument to `mix.sass()`, `mix.less()`, and `mix.stylus()`.
 
-- **Node-Sass Options:** https://github.com/sass/node-sass#options
-- **Less Options:** https://github.com/webpack-contrib/less-loader#options
+-   **Node-Sass Options:** https://github.com/sass/node-sass#options
+-   **Less Options:** https://github.com/webpack-contrib/less-loader#options
 
 ```js
 mix.sass('src', 'destination', { outputStyle: 'nested' });
@@ -69,9 +69,7 @@ If using Stylus, you may wish to install extra plugins, such as [Rupture](https:
 
 ```js
 mix.stylus('resources/stylus/app.styl', 'public/css', {
-    use: [
-        require('rupture')()
-    ]
+    use: [require('rupture')()]
 });
 ```
 
