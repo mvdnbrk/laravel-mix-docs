@@ -1,4 +1,5 @@
 - ## Overview
+    - [Upgrade](/docs/{{version}}/upgrade)
     - [Basic Example](/docs/{{version}}/basic-example)
     - [Installation](/docs/{{version}}/installation)
     - [Laravel Workflow](/docs/{{version}}/workflow)
