@@ -43,8 +43,8 @@ npm run dev
 
 Once that finishes, you should now see:
 
-* `./public/js/app.js`
-* `./public/css/app.css`
+-   `./public/js/app.js`
+-   `./public/css/app.css`
 
 Excellent! Next, let's get to work. To watch your JavaScript for changes, run:
 
