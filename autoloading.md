@@ -6,7 +6,7 @@ Consider the following example:
 
 ```js
 mix.autoload({
-   jquery: ['$', 'window.jQuery']
+    jquery: ['$', 'window.jQuery']
 });
 ```
 
