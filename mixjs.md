@@ -1,7 +1,7 @@
 # JavaScript
 
 ```js
-mix.js(src|[src], output)
+mix.js(src | [src], output);
 ```
 
 With a single line of code, Laravel Mix allows you to trigger a number of vital actions.
