@@ -173,9 +173,10 @@ class Example {
      * @return {Object}
      */
     babelConfig() {
-        // Example:
-        // return { presets: ['react'] };
-}
+        // Example:    
+        // return { presets: ['@babel/preset-react'] };
+    }
+
 ```
 
 Do note that each of the methods in the example above are optional. In certain situations, your component may only need to add a webpack loader and/or tweak the Babel configuration that Mix uses. No problem. Omit the rest of the interface.
