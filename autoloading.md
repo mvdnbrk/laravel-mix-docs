@@ -11,4 +11,3 @@ mix.autoload({
 ```
 
 This snippet specifies that webpack should prepend `var $ = require('jquery')` to every location that it encounters either the global `$` identifier, or `window.jQuery`. Nifty!
-
