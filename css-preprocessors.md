@@ -5,7 +5,7 @@ mix.sass('src', 'output', pluginOptions);
 mix.standaloneSass('src', 'output', pluginOptions); // Isolated from Webpack build.
 mix.less('src', 'output', pluginOptions);
 mix.stylus('src', 'output', pluginOptions);
-mix.postCss('src', 'output', [ require('precss')() ])
+mix.postCss('src', 'output', [require('precss')()]);
 ```
 
 A single method call allows you to compile your Sass, Less, or Stylus files, while applying automatic CSS3 prefixing.
@@ -93,7 +93,6 @@ mix.stylus('resources/stylus/app.styl', 'public/css', {
 
 That's all there is to it!
 
-
 ### CSS `url()` Rewriting
 
 One key webpack concept to understand is that it will rewrite any `url()`s within your stylesheets. While this might initially sound strange, it's an incredibly powerful piece of functionality.
@@ -114,7 +113,7 @@ Notice that relative URL? By default, Laravel Mix and webpack will find `thing.p
 
 ```css
 .example {
-  background: url(/images/thing.png?d41d8cd98f00b204e9800998ecf8427e);
+    background: url(/images/thing.png?d41d8cd98f00b204e9800998ecf8427e);
 }
 ```
 
@@ -131,7 +130,7 @@ With this addition to your `webpack.mix.js` file, we will no longer match `url()
 
 ```css
 .example {
-  background: url("../images/thing.png");
+    background: url("../images/thing.png");
 }
 ```
 
@@ -202,7 +201,7 @@ For example, if `resources/sass/app.scss` contains...
 
 ```css
 .example {
-  color: red;
+    color: red;
 }
 ```
 
@@ -214,7 +213,7 @@ Alternatively, if you'd prefer to skip the Sass/Less/Stylus compile step entirel
 
 ```js
 mix.postCss('resources/css/main.css', 'public/css', [
-   require('precss')()
+    require('precss')()
 ]);
 ```
 
