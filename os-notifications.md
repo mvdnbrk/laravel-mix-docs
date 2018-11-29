@@ -6,8 +6,7 @@ However, in certain circumstances, this is undesirable \(such as compiling on yo
 If this happens to be the case, they can be disabled from your `webpack.mix.js` file.
 
 ```js
-mix.js(src, output)
-   .disableNotifications();
+mix.js(src, output).disableNotifications();
 ```
 
 Simple!
