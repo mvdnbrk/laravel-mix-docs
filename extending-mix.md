@@ -56,15 +56,15 @@ Any of these operations are a cinch with Mix's component system.
 
 ### The Component Interface
 
-*   **name**: What should be used as the method name, when calling the component. (Defaults to the class name.)
-*   **dependencies**: List all npm dependencies that should be installed by Mix.
-*   **register**: When your component is called, all user parameters will instantly be passed to this method.
-*   **boot**: Boot the component. This method is triggered after the user's webpack.mix.js file has fully loaded.
-*   **webpackEntry**: Append to the master Mix webpack entry object.
-*   **webpackRules**: Rules to be merged with the master webpack loaders.
-*   **webpackPlugins**: Plugins to be merged with the master webpack config.
-*   **webpackConfig**: Override the generated webpack configuration.
-*   **babelConfig**: Extra Babel config that should be merged with Mix's defaults.
+-   **name**: What should be used as the method name, when calling the component. (Defaults to the class name.)
+-   **dependencies**: List all npm dependencies that should be installed by Mix.
+-   **register**: When your component is called, all user parameters will instantly be passed to this method.
+-   **boot**: Boot the component. This method is triggered after the user's webpack.mix.js file has fully loaded.
+-   **webpackEntry**: Append to the master Mix webpack entry object.
+-   **webpackRules**: Rules to be merged with the master webpack loaders.
+-   **webpackPlugins**: Plugins to be merged with the master webpack config.
+-   **webpackConfig**: Override the generated webpack configuration.
+-   **babelConfig**: Extra Babel config that should be merged with Mix's defaults.
 
 Here's an example/dummy component that will give you a better idea of how you'll construct your own components. For more examples, [refer to the very
 components that Mix uses behind the scenes](https://github.com/JeffreyWay/laravel-mix/tree/master/src/components).
@@ -173,9 +173,10 @@ class Example {
      * @return {Object}
      */
     babelConfig() {
-        // Example:
-        // return { presets: ['react'] };
-}
+        // Example:    
+        // return { presets: ['@babel/preset-react'] };
+    }
+
 ```
 
 Do note that each of the methods in the example above are optional. In certain situations, your component may only need to add a webpack loader and/or tweak the Babel configuration that Mix uses. No problem. Omit the rest of the interface.

@@ -12,9 +12,9 @@ Yikes - not ideal!
 
 One solution is to isolate, or extract, your vendor libraries into their own file.
 
-- **Application Code**: `app.js`
-- **Vendor Libraries**: `vendor.js`
-- **Manifest \(webpack Runtime\)**: `manifest.js`
+-   **Application Code**: `app.js`
+-   **Vendor Libraries**: `vendor.js`
+-   **Manifest \(webpack Runtime\)**: `manifest.js`
 
 ```js
 mix.extract(['vue', 'jquery']);

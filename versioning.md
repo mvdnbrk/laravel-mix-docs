@@ -1,13 +1,12 @@
 # Versioning
 
 ```js
-mix.js('src', 'output')
-   .version();
+mix.js('src', 'output').version();
 ```
 
 To assist with long-term caching, Laravel Mix provides the `mix.version()` method, which enables file hashing. such as `app.js?id=8e5c48eadbfdd5458ec6`. This is useful for cache-busting. Imagine that your server automatically caches scripts for a year, to improve performance. That's great, but, each time you make a change to your application code, you need some way to instruct the server to bust the cache. This is typically done through the use of query strings, or file hashing.
 
-With versioning enabled, each time your code changes, a new hashed query  string file will be generated. Consider the following `webpack.mix.js` file.
+With versioning enabled, each time your code changes, a new hashed query string file will be generated. Consider the following `webpack.mix.js` file.
 
 ```js
 let mix = require('laravel-mix');
@@ -48,7 +47,6 @@ For Laravel projects, a solution is provided out of the box. Simply call the glo
 ```
 
 Pass the unhashed file path to the `mix()` function, and, behind the scenes, we'll figure out which script or stylesheet should be imported. Please note that you may/should use this function, even if you're not versioning your files.
-
 
 ### Versioning Extra Files
 
