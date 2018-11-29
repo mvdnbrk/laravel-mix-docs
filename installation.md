@@ -14,7 +14,6 @@ Now, from the command line, you may run `npm run watch` to watch your files for 
 
 > {note} You won't find a `webpack.config.js` file in your project root. By default, Laravel defers to the config file from this repo. However, should you need to configure it, you may copy the file to your project root, and then update your `package.json` NPM scripts accordingly: `cp node_modules/laravel-mix/setup/webpack.config.js ./`.
 
-
 ### Stand-Alone Project
 
 Begin by installing Laravel Mix through NPM or Yarn, and then copying the example Mix file to your project root.
