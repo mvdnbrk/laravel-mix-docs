@@ -12,7 +12,10 @@ mix.options({
 });
 ```
 
-A handful of Mix options and overrides are available, should you require them. Please take note of the options above, as well as their default values. Here's a quick overview:
+A handful of Mix options and overrides are available, should you require them.  
+Please take note of the options above, as well as their default values.
+
+Here's a quick overview:
 
 -   **extractVueStyles:** Extract `.vue` component styling (CSS within `<style>` tags) to a dedicated file, rather than inlining it into the HTML.
 -   **globalVueStyles:** Indicate a file to include in every component styles. This file should only include variables, functions or mixins in order to prevent duplicated css in your final, compiled files. This option only works when `extractVueStyles` is enabled.
