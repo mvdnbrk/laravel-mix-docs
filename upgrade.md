@@ -1,6 +1,6 @@
 # Upgrade to v4.0
 
-```bash##
+```bash
 npm remove laravel-mix
 npm install laravel-mix@4.0.0
 ```
