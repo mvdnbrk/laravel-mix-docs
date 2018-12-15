@@ -19,10 +19,10 @@ npm install
 Think of this file as your home base for all front-end configuration.
 
 ```js
-let mix = require('laravel-mix');
+let mix = require('laravel-mix')
 
 mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+    .sass('resources/sass/app.scss', 'public/css')
 ```
 
 By default, we've enabled JavaScript ES2017 + module bundling, as well as Sass compilation.
