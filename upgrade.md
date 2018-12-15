@@ -34,8 +34,12 @@ After upgrading, if you encounter any issues related to `vue-template-compiler`,
 
 As part of the vue-loader 15 updates, if your code uses the CommonJS syntax for importing EcmaScript modules, you'll need to append `.default`, like so:
 
-```js
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+```diff
+Vue.component(
+    'example-component', 
+-   require('./components/ExampleComponent.vue')
++   require('./components/ExampleComponent.vue').default
+);
 ```
 
 Switching to EcmaScript imports is the **recommended** option:
