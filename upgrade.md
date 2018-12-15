@@ -53,7 +53,7 @@ Vue.component('example-component', ExampleComponent);
 ## Babel 7 support
 
 The naming convention for official Babel plugins has changed.  
-They are now scoped under the `@babel` namespace.  
+They are now scoped under the **@babel** namespace.  
 
 Update your `package.json` and change all occurences of `"babel-plugin-[name]"`:
 
