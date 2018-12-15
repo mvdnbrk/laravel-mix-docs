@@ -83,7 +83,7 @@ Due to the mandatory switch from Uglify to Terser, if your project was overridin
 `Config.uglify = {}`, you'll need to switch to `Config.terser = {}`.  
 The [options API](https://github.com/webpack-contrib/terser-webpack-plugin#terseroptions) is largely the same.
 
-*webpack.mix.js:**
+**webpack.mix.js:**
 
 ```diff
 mix.options({
