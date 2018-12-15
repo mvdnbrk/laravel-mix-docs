@@ -79,30 +79,19 @@ If you have `require('laravel-mix').mix` in your webpack.mix.js file, change it 
 
 ## Switch from Uglify to Terser
 
-Due to the mandatory switch from Uglify to Terser, if your project was overriding the default config with `Config.uglify = {}`, you'll need to switch to `Config.terser = {}`.  
+Due to the mandatory switch from Uglify to Terser, if your project was overriding the default config with  
+`Config.uglify = {}`, you'll need to switch to `Config.terser = {}`.  
 The [options API](https://github.com/webpack-contrib/terser-webpack-plugin#terseroptions) is largely the same.
 
-**Before:**
+*webpack.mix.js:**
 
-```
-// webpack.mix.js
-
+```diff
 mix.options({
-    uglify: {
-        uglifyOptions: {
-            warnings: true
-        }
-    }
-});
-```
-
-**After:**
-
-```
-mix.options({
-    terser: {
-        terserOptions: {
-            warnings: true
+-    uglify: {
+-        uglifyOptions: {
++    terser: {
++        terserOptions: {
+           warnings: true
         }
     }
 });
