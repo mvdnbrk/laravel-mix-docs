@@ -115,7 +115,10 @@ mix.options({
 
 ## Vue component Sass preprocessing
 
-If your project does not include a `mix.sass()` call (which automatically downloads all necessary dependencies), but does specify `lang="sass"` in your Vue components, you may need to install either node-sass or sass.  
-Because Mix doesn't know which preprocessors you specify in your Vue components, you'll need to manually pull them in.  
+If your project does not include a `mix.sass()` call (which automatically downloads all necessary dependencies), but does specify `lang="sass"` in your Vue components, you may need to install either node-sass or sass.
+
+Because Mix doesn't know which preprocessors you specify in your Vue components,  
+you'll need to manually pull them in.
+
 You can fix this with `npm install node-sass sass-loader` or `npm install sass sass-loader`.  
 Please note that the same is true for Less and Stylus.
