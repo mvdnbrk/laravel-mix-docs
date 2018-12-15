@@ -53,6 +53,7 @@ npm run watch
 ```
 
 Laravel ships with a `ExampleComponent.vue` file which you can find in the  components folder:
+
 ```markup
 ./resources/js/components/ExampleComponent.vue
 ```
