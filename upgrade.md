@@ -72,6 +72,12 @@ In an effort to improve performance for those who only need to compile CSS, this
 However, it seems to be more confusing than helpful to newcomers.  
 Migrate by switching from `mix.fastSass()` to `mix.sass()`.
 
+```diff
+- mix.fastSass()
+- mix.standaloneSass()
++ mix.sass()
+```
+
 ## Removed deprecated `.mix` property
 
 The deprecated mix property has now been removed.  
