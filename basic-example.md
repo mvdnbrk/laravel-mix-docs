@@ -22,7 +22,8 @@ During development, it's unnecessary to minify the output, however, this will be
 
 ## Less
 
-But what if you prefer Less compilation instead? No problem. Just swap `mix.sass()` with `mix.less()`, and you're done!
+But what if you prefer Less compilation instead?  
+No problem. Just swap `mix.sass()` with `mix.less()`, and you're done!
 
 You'll find that most common webpack tasks become a cinch with Laravel Mix.
 
