@@ -28,7 +28,7 @@ After upgrading, if you encounter any issues related to `vue-template-compiler`,
 ## Notes
 
 -   If your project heavily uses JavaScript dynamic imports, you may need to hold off until the release of webpack 5 early next year. There are known compile issues related to this that we cannot fix until then. Once webpack 5 is out, Mix will be updated shortly after. **If you're unfamiliar with dynamic imports, then this very likely won't affect your project**.
--   Sass support is now an on-demand dependency. In prior versions of Mix, the `node-sass` and `sass-loader` dependencies were included out of the box, regardless of whether your project required Sass compilation or not. To help improve install times, these two dependencies will now be installed on-demand if, and only if, your project specifies Sass compilation with `mix.sass()`. The first time you run npm run dev, the dependencies will be installed and saved to your dev-dependencies list.
+-   Sass support is now an on-demand dependency. In prior versions of Mix, the `node-sass` and `sass-loader` dependencies were included out of the box, regardless of whether your project required Sass compilation or not. To help improve install times, these two dependencies will now be installed on-demand if, and only if, your project specifies Sass compilation with `mix.sass()`. The first time you run `npm run dev`, the dependencies will be installed and saved to your dev-dependencies list.
 
 ## Importing ES Modules
 
