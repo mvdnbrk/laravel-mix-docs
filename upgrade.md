@@ -83,6 +83,11 @@ Migrate by switching from `mix.fastSass()` to `mix.sass()`.
 The deprecated mix property has now been removed.  
 If you have `require('laravel-mix').mix` in your webpack.mix.js file, change it to `require('laravel-mix')`.
 
+```diff
+- require('laravel-mix').mix
++ require('laravel-mix')
+```
+
 ## Switch from Uglify to Terser
 
 Due to the mandatory switch from Uglify to Terser,  
