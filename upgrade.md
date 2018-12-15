@@ -142,7 +142,7 @@ npm install node-sass sass-loader
 
 or
 
-```
+```bash
 npm install sass sass-loader  
 ```
 
