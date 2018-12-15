@@ -15,7 +15,7 @@ After upgrading, if you encounter any issues related to `vue-template-compiler`,
 -   Upgraded to vue-loader 15.
 -   Upgraded to Babel 7.
 -   Automatic vendor extraction. If you call `mix.extract()` with zero arguments, all vendor dependencies (any package from `node_modules/` that you pull in) will automatically be extracted. Nifty!
--   CSS minification (via cssnano) options may be provided 887808f
+-   CSS minification (via cssnano) options may be provided.
 -   PostCSS plugins may be passed to mix.sass/less/stylus() on a per-call basis. This means you may provide unique PostCSS plugins for each `mix.sass()` call, if desired.
 -   Switched JS optimizing/minification from Uglify to Terser.
 -   Switched from node-sass to Dart Sass. While this comes with a small increased compile-time cost, the benefit is faster and more reliable npm installs.
