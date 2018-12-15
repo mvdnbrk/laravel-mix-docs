@@ -134,5 +134,16 @@ If your project does not include a `mix.sass()` call (which automatically downlo
 Because Mix doesn't know which preprocessors you specify in your Vue components,  
 you'll need to manually pull them in.
 
-You can fix this with `npm install node-sass sass-loader` or `npm install sass sass-loader`.  
+You can fix this with:
+
+```bash
+npm install node-sass sass-loader
+```
+
+or
+
+```
+npm install sass sass-loader  
+```
+
 Please note that the same is true for Less and Stylus.
