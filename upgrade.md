@@ -52,8 +52,22 @@ Vue.component('example-component', ExampleComponent);
 
 ## Babel 7 support
 
-1.  The naming convention for official Babel plugins has changed. They are now scoped under the @babel namespace. As such, in your package.json file, change all occurrences of `"babel-plugin-[name]": "6.x"` to `"@babel/plugin-[name]": "7.x"`.
-2.  If you've created a `.babelrc` file in your project, update all plugin name references. For example, update `"plugins": ["babel-plugin-transform-object-rest-spread"]` to `"plugins": ["@babel/plugin-proposal-object-rest-spread"]`.
+The naming convention for official Babel plugins has changed.  
+They are now scoped under the `@babel` namespace.  
+
+Update your `package.json` and change all occurences of `"babel-plugin-[name]"`:
+
+```diff
+- "babel-plugin-[name]": "6.x"
++ "@babel/plugin-[name]": "7.x"
+```
+
+If you've created a `.babelrc` file in your project, update all plugin name references:  
+
+```diff
+- "plugins": ["babel-plugin-transform-object-rest-spread"]
++ "plugins": ["@babel/plugin-proposal-object-rest-spread"]
+```
 
 ## Switch from Node Sass to Dart Sass
 
