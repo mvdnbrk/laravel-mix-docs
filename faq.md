@@ -97,7 +97,7 @@ This is particularly useful for legacy projects where your folder structure is a
 
 If you're not using Laravel, your `mix-manifest.json` file will be dumped into the project root. If you need to change this, call `mix.setPublicPath('dist/');`, and your manifest file will now be saved in that base directory.
 
-### How Do I autoload modules with webpack?
+### How do I autoload modules with webpack?
 
 Through its `ProvidePlugin` plugin, webpack allows you to automatically load modules, where needed. A common use-case for this is when we need to pull in jQuery.
 
