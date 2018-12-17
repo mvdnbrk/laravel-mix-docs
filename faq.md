@@ -141,8 +141,10 @@ Update as needed to fix the problem:
 
 ```bash
 npm update vue
+```
 
-// or
+or
 
+```bash
 npm install vue@2.5.15
 ```
