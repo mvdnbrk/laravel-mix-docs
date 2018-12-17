@@ -98,7 +98,7 @@ If you're familiar with Vue, this should all look very familiar, so we'll move o
 ##### ./webpack.mix.js
 
 ```js
-let mix = require('laravel-mix');
+const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js');
 ```
