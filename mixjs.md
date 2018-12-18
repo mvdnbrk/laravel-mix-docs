@@ -16,7 +16,7 @@ With a single line of code, Laravel Mix allows you to trigger a number of vital 
 ### Usage
 
 ```js
-let mix = require('laravel-mix');
+const mix = require('laravel-mix');
 
 // 1. A single src and output path.
 mix.js('src/app.js', 'dist/app.js');
@@ -38,7 +38,7 @@ mix.js('src/app.js', 'dist/')
 Consider a typical Laravel install. By default, your JavaScript entry point will be located at `./resources/js/app.js`. Let's prepare a `webpack.mix.js` file to compile that to `./public/js/app.js`.
 
 ```js
-let mix = require('laravel-mix');
+const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js');
 ```
@@ -98,7 +98,7 @@ If you're familiar with Vue, this should all look very familiar, so we'll move o
 ##### ./webpack.mix.js
 
 ```js
-let mix = require('laravel-mix');
+const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js');
 ```
@@ -114,3 +114,15 @@ mix.react('resources/js/app.jsx', 'public/js/app.js');
 ```
 
 Of course, you'll still want to install React and ReactDOM through NPM, per usual, but everything else should be taken care of.
+
+
+### Typescript Support
+
+Laravel Mix also ships with basic Typescript support.  
+Simply update your `mix.js()` call to `mix.ts()`, and then use the exact same set of arguments.
+
+```js
+mix.ts('resources/assets/js/app.ts', 'public/js/app.js');
+```
+
+Of course, you'll still want to do the necessary tweeks like creating `tsconfig.json` file and installing [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped), but everything else should be taken care of.

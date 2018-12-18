@@ -2,7 +2,6 @@
 
 ```js
 mix.sass('src', 'output', pluginOptions);
-mix.standaloneSass('src', 'output', pluginOptions); // Isolated from Webpack build.
 mix.less('src', 'output', pluginOptions);
 mix.stylus('src', 'output', pluginOptions);
 mix.postCss('src', 'output', [require('precss')()]);
@@ -54,13 +53,13 @@ Compile this down as usual \(`npm run webpack`\), and you'll find a `./public/cs
 
 ### Plugin Options
 
-Behind the scenes, Laravel Mix of course defers to Node-Sass, Less, and Stylus to compile your Sass and Less files, respectively. From time to time, you may need to override the default options that we pass to them. You may provide these as the third argument to `mix.sass()`, `mix.less()`, and `mix.stylus()`.
+Behind the scenes, Laravel Mix of course defers to Sass (Dart implementation), Less, and Stylus to compile your Sass and Less files, respectively. From time to time, you may need to override the default options that we pass to them. You may provide these as the third argument to `mix.sass()`, `mix.less()`, and `mix.stylus()`.
 
--   **Node-Sass Options:** https://github.com/sass/node-sass#options
+-   **Dart Sass Options:** https://github.com/sass/dart-sass#javascript-api
 -   **Less Options:** https://github.com/webpack-contrib/less-loader#options
 
 ```js
-mix.sass('src', 'destination', { outputStyle: 'nested' });
+mix.sass('src', 'destination', { outputStyle: 'expanded' });
 ```
 
 #### Stylus Plugins
@@ -216,13 +215,3 @@ mix.postCss('resources/css/main.css', 'public/css', [
 ```
 
 Notice that the third argument is an array of [postcss plugins](https://github.com/postcss/postcss#plugins) that should be applied to your build.
-
-### Standalone Sass Builds
-
-If you do not wish Mix and Webpack to process your Sass in any way, you may instead use `mix.standaloneSass()`, which will improve the build time of your app drastically. Just remember: if you choose this route, Webpack won't touch your CSS. It won't rewrite URLs, copy assets (via file-loader), or apply automatic image optimization or CSS purification. If those features are unnecessary for your application, definitely use this option instead of `mix.sass()`.
-
-```js
-mix.standaloneSass('resources/sass/app.scss', 'public/css');
-```
-
-> {note} If you are using standaloneSass while watching for file changes with `npm run watch` then you will need to prefix imported files with underscores in order to flag them as partials (e.g. _header.scss, _alert.scss). Failing to do this will result in Sass compilation errors and/or extraneous CSS files.
