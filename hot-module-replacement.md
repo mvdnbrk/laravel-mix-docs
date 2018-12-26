@@ -96,7 +96,7 @@ If you wish to run Hot Module Replacement on a different host or port you may ov
 ```js
 mix.options({
     hmrOptions: {
-        host: 'example.com'
+        host: 'example.com',
         port: 8080
     }
 })
