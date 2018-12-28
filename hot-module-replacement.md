@@ -9,12 +9,12 @@ Where available, Laravel Mix provides seamless support for hot module replacemen
 Both Laravel and Laravel Mix work together to abstract away the complexities in getting hot reloading to work. Have a look at your Laravel install's included `package.json` file. Within the `scripts` object, you'll see:
 
 ```js
-  "scripts": {
+"scripts": {
     "dev": "cross-env NODE_ENV=development webpack --progress --hide-modules",
     "watch": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules",
     "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot",
     "production": "cross-env NODE_ENV=production webpack --progress --hide-modules"
-  }
+}
 ```
 
 Take note of the `hot` option; this is the one you want. From the command line, run `npm run hot` to boot up a Node server and monitor your bundle for changes. Next, load your Laravel app in the browser, as you normally would. Perhaps, `http://my-app.dev`.
@@ -48,27 +48,25 @@ With this adjustment, Laravel will do the work for you. If you run 'npm run hot'
 If you develop your app on an HTTPS connection, your hot reloading scripts and styles must also be served via HTTPS. To achieve this, add the `--https` flag to the `hot` option command within `package.json`:
 
 ```js
-  "scripts": {
-    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --https",
-  }
+"hot": "NODE_ENV=development webpack-dev-server --inline --hot --https"
 ```
 
 With the above setting, the `webpack-dev-server` will generate a self-signed certificate for you. If you wish to use your own certificate, you may use these settings:
 
 ```js
-    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --https --key /path/to/server.key --cert /path/to/server.crt --cacert /path/to/ca.pem",
+"hot": "NODE_ENV=development webpack-dev-server --inline --hot --https --key /path/to/server.key --cert /path/to/server.crt --cacert /path/to/ca.pem"
 ```
 
 Now, in your HTML/Blade files you can use either:
 
 ```html
-    <script src="https://localhost:8080/js/bundle.js"></script>
+<script src="https://localhost:8080/js/bundle.js"></script>
 ```
 
 or:
 
 ```html
-    <script src="{{ mix('js/bundle.js') }}"></script>
+<script src="{{ mix('js/bundle.js') }}"></script>
 ```
 
 
