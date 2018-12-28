@@ -9,12 +9,12 @@ Where available, Laravel Mix provides seamless support for hot module replacemen
 Both Laravel and Laravel Mix work together to abstract away the complexities in getting hot reloading to work. Have a look at your Laravel install's included `package.json` file. Within the `scripts` object, you'll see:
 
 ```js
-  "scripts": {
+"scripts": {
     "dev": "cross-env NODE_ENV=development webpack --progress --hide-modules",
     "watch": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules",
     "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot",
     "production": "cross-env NODE_ENV=production webpack --progress --hide-modules"
-  }
+}
 ```
 
 Take note of the `hot` option; this is the one you want. From the command line, run `npm run hot` to boot up a Node server and monitor your bundle for changes. Next, load your Laravel app in the browser, as you normally would. Perhaps, `http://my-app.dev`.
