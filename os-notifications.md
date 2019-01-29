@@ -9,4 +9,13 @@ If this happens to be the case, they can be disabled from your `webpack.mix.js` 
 mix.disableNotifications();
 ```
 
+Maybe you only want to be notified if there are any errors? That is possible too, by only disabling
+the success notifications. Please note that this is intended to be used via the `watch` command. 
+The first compilation always displays a success notification. Only subsequent success notifications
+are disabled.
+
+```js
+mix.disableSuccessNotifications();
+```
+
 Simple!
