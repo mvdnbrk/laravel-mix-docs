@@ -1,4 +1,4 @@
-# Mix Options
+# Laravel Mix Options
 
 ```js
 mix.options({
