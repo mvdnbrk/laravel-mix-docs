@@ -37,7 +37,7 @@ Most of your time will be spent here.
 Head over to your webpack.mix.js file:
 
 ```js
-let mix = require('laravel-mix');
+const mix = require('laravel-mix');
 
 mix.js('src/app.js', 'dist')
    .sass('src/app.scss', 'dist')
