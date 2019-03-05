@@ -8,7 +8,7 @@ Laravel ships with everything you need to get started. Simply:
 
 * Install Laravel
 * Run `npm install`
-* Visit your `webpack.mix.js file`, and get started!
+* Visit your `webpack.mix.js` file, and get started!
 
 Now, from the command line, you may run `npm run watch` to watch your files for changes, and then recompile.
 
