@@ -71,4 +71,4 @@ As a tip, consider adding the following NPM scripts to your `package.json` file,
 }
 ```
 
-To handle differrent environments, the scripts use cross-env: `npm install cross-env --save-dev`
+To handle different environments, the scripts use cross-env: `npm install cross-env --save-dev`
