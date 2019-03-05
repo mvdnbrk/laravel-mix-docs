@@ -70,3 +70,5 @@ As a tip, consider adding the following NPM scripts to your `package.json` file,
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
 }
 ```
+
+To handle differrent environments, the scripts use cross-env: `npm install cross-env --save-dev`
