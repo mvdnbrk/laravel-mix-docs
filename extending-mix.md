@@ -176,6 +176,7 @@ class Example {
         // Example:    
         // return { presets: ['@babel/preset-react'] };
     }
+}
 
 ```
 
