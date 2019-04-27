@@ -8,7 +8,7 @@ The very component-based system that Mix uses behind the scenes to build its API
 
 ```js
 // webpack.mix.js;
-let mix = require('laravel-mix');
+const mix = require('laravel-mix');
 
 mix.extend('foo', function(webpackConfig, ...args) {
     console.log(webpackConfig); // the compiled webpack configuration object.
