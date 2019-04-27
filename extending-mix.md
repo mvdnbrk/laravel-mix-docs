@@ -201,7 +201,7 @@ Once you've constructed or installed your desired component, simply require it f
 ```js
 // foo-component.js
 
-let mix = require('laravel-mix');
+const mix = require('laravel-mix');
 
 class Example {
     webpackRules() {
@@ -218,7 +218,7 @@ mix.extend('foo', new Example());
 ```js
 // webpack.mix.js
 
-let mix = require('laravel-mix');
+const mix = require('laravel-mix');
 require('./foo-component');
 
 mix
