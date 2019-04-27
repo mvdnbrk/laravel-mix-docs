@@ -143,7 +143,7 @@ class Example {
         // return {
         //     test: /\.less$/,
         //     loaders: ['...']
-        // });
+        // };
     }
 
     /*
