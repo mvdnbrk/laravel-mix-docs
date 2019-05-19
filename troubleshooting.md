@@ -2,7 +2,7 @@
 
 ### I'm having trouble updating/installing Mix.
 
-Unfortunately, there are countless reasons why your dependencies may not be installing properly. A common root relates to an ancient version of Node (`node -v`) and npm (`npm -v`) installed. As a first step, visit http://nodejs.org and update those.
+Unfortunately, there are countless reasons why your dependencies may not be installing properly. A common root relates to an ancient version of Node (`node -v`) and npm (`npm -v`) installed. As a first step, visit [nodejs.org](https://nodejs.org) and update those.
 
 Otherwise, often, it's related to a faulty lock file that needs to be deleted. Give this series of commands a try to install everything from scratch:
 
