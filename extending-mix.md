@@ -2,7 +2,7 @@
 
 The very component-based system that Mix uses behind the scenes to build its API is also accessible to you - whether to extend Mix for your own personal projects, or to distribute to the world as a reusable package.
 
-> {tip} A list of packages which are already available can be found at the <a href="https://laravel-mix.com/extensions">extensions page</a>.
+> {tip} A list of packages which are already available can be found on the <a href="https://laravel-mix.com/extensions">extensions page</a>.
 
 ## Example
 
