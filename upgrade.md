@@ -3,9 +3,9 @@
 ## Babel 7 support
 
 As this new version of Babel [includes major breaking changes](https://babeljs.io/blog/2018/08/27/7.0.0#major-breaking-changes),  
-Mix aslso needs to bump from v2 to v3.
+Mix also needs to bump from v2 to v3.
 
-We've taken care of most the changes, however, if your project pulls in extra Babel plugins that Mix does not provide out of the box, you'll need to update locally as well.
+We've taken care of most of the changes, however, if your project pulls in extra Babel plugins that Mix does not provide out of the box, you'll need to update locally as well.
 
 The naming convention for official Babel plugins has changed.  
 They are now scoped under the **@babel** namespace.  
