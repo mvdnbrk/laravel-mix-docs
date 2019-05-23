@@ -126,3 +126,10 @@ mix.ts('resources/assets/js/app.ts', 'public/js/app.js');
 ```
 
 Of course, you'll still want to do the necessary tweeks like creating `tsconfig.json` file and installing [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped), but everything else should be taken care of.
+
+
+### Plain JavaScript and Minification
+
+If you don't need support for Vue, React or Typescript build tasks you can also use plain JavaScript concatenation and minification.    
+There is also support for Babel available to get the most basic stuff done.  
+For more information, see the [Concatenation and Minification](concatenation-and-minification) page.
