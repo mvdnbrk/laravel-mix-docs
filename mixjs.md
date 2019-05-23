@@ -130,5 +130,5 @@ Of course, you'll still want to do the necessary tweeks like creating `tsconfig.
 
 ### Plain JavaScript and Minification
 
-If you do not need complex building with Vue, React or Typescript support you can also use plain JavaScript concatenation and minification. There is also support for Babel available to get the most basic stuff done.  
+If you do not need support for complex  with Vue, React or Typescript build tasks you can also use plain JavaScript concatenation and minification. There is also support for Babel available to get the most basic stuff done.  
 For more information, see the [Concatenation and Minification](concatenation-and-minification) documentation.
