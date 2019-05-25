@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://laravel-mix.com/docs">
-      <img src="https://laravel.com/assets/img/components/logo-mix.svg" alt="Laravel Mix">
+      <img src="https://laravel-mix.com/svg/laravel-mix-logo.svg" alt="Laravel Mix" width="200">
   </a>
 </p>
 
