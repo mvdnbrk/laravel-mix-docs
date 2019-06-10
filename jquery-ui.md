@@ -2,7 +2,7 @@
 
 jQuery UI is a toolkit for rendering common components, such as datepickers, draggables, etc. No adjustments are needed to make it work with Laravel Mix.
 
-## Build Your `webpack.mix.js` Configuration
+## Build your `webpack.mix.js` configuration
 
 ```js
 mix.js('resources/js/app.js', 'public/js')
@@ -15,7 +15,7 @@ mix.js('resources/js/app.js', 'public/js')
 npm install jquery-ui --save-dev
 ```
 
-## Load Your Desired Widget
+## Load your desired widget
 
 ```js
 // resources/js/app.js
