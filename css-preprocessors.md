@@ -204,7 +204,7 @@ For example, if `resources/sass/app.scss` contains...
 
 Nifty!
 
-### PostCss Without Sass or Less
+### PostCSS without Sass or Less
 
 Alternatively, if you'd prefer to skip the Sass/Less/Stylus compile step entirely and instead use PostCSS, you may do so via the `mix.postCss()` method.
 
