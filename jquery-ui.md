@@ -38,5 +38,6 @@ import 'jquery-ui/ui/widgets/datepicker.js';
 
 ```js
 // resources/js/app.js
+
 $('#datepicker').datepicker();
 ```
