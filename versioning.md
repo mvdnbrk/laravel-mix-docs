@@ -9,7 +9,7 @@ To assist with long-term caching, Laravel Mix provides the `mix.version()` metho
 With versioning enabled, each time your code changes, a new hashed query string file will be generated. Consider the following `webpack.mix.js` file.
 
 ```js
-let mix = require('laravel-mix');
+const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
    .sass('resources/sass/app.sass', 'public/css')
