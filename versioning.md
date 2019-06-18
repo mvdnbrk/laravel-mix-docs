@@ -60,7 +60,7 @@ Now, we'll still version any relevant compiled files, but we'll also append a qu
 
 ### Optionally versioning files
 
-Because versioned files are usually unnecessary in development, you may instruct the versioning process to only run during npm run production:  
+Because versioned files are usually unnecessary in development, you may instruct the versioning process to only run during production builds:  
 
 ```js
 if (mix.inProduction()) {
