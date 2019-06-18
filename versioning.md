@@ -57,3 +57,13 @@ mix.version(['public/js/random.js']);
 ```
 
 Now, we'll still version any relevant compiled files, but we'll also append a query string, `public/js/random.js?{hash}`, and update your `mix-manifest.json` file.
+
+### Optionally Versioning Files
+
+Because versioned files are usually unnecessary in development, you may instruct the versioning process to only run during production builds:  
+
+```js
+if (mix.inProduction()) {
+    mix.version();
+}
+```
