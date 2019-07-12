@@ -46,7 +46,7 @@ mix.js('src/app.js', 'dist')
 
 Take note of the source paths. You're free to amend the paths to match your preferred structure, but if you're happy with our defaults simply run `mkdir src && touch src/app.{js,scss}` to create the files/directories.  
 You're all set now.  
-Compile everything down by running `node_modules/.bin/webpack` from the command line.
+Compile everything down by running `node_modules/.bin/webpack --config=node_modules/laravel-mix/setup/webpack.config.js` from the command line.
 
 You should now see:
 
