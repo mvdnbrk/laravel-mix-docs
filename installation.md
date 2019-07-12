@@ -44,9 +44,19 @@ mix.js('src/app.js', 'dist')
    .setPublicPath('dist');
 ```
 
-Take note of the source paths. You're free to amend the paths to match your preferred structure, but if you're happy with our defaults simply run `mkdir src && touch src/app.{js,scss}` to create the files/directories.  
+Take note of the source paths.  
+You're free to amend the paths to match your preferred structure, but if you're happy with our defaults simply run the following command to create the files and directories:
+
+```bash
+mkdir src && touch src/app.{js,scss}
+```
+
 You're all set now.  
-Compile everything down by running `node_modules/.bin/webpack --config=node_modules/laravel-mix/setup/webpack.config.js` from the command line.
+Compile everything down by running:
+
+```bash
+node_modules/.bin/webpack --config=node_modules/laravel-mix/setup/webpack.config.js
+```
 
 You should now see:
 
