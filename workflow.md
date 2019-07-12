@@ -32,7 +32,7 @@ By default, we've enabled JavaScript ES2017 + module bundling, as well as Sass c
 Go ahead and compile these down.
 
 ```bash
-node_modules/.bin/webpack
+node_modules/.bin/webpack --config=node_modules/laravel-mix/setup/webpack.config.js
 ```
 
 Alternatively, if you have the NPM script within your `package.json`, you may do:
