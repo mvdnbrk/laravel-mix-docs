@@ -52,6 +52,14 @@ With this adjustment, Laravel will do the work for you.
 If you run 'npm run hot' to enable hot reloading, the function will set the necessary `http://localhost:8080` base url.
 If, instead, you use `npm run dev` or `npm run production`, it'll use your domain as the base.
 
+> {note} Ensure you are not versioning your bundle in local environment. If you are doing so, HMR cannot reload the re-compiled modules. If you need bundle versioning, check if you are in production environment:
+
+```js
+if (mix.inProduction()) {
+    mix.version();
+}
+```
+
 ### Usage on HTTPS
 
 If you develop your app on an HTTPS connection, your hot reloading scripts and styles must also be served via HTTPS.
