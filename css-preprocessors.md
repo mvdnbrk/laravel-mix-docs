@@ -59,7 +59,12 @@ Behind the scenes, Laravel Mix of course defers to Sass (Dart implementation), L
 -   **Less Options:** https://github.com/webpack-contrib/less-loader#options
 
 ```js
-mix.sass('src', 'destination', { outputStyle: 'expanded' });
+mix.sass('src', 'destination', {
+    sassOptions: {
+        outputStyle: 'nested',
+    },
+    implementation: require('node-sass') // Switch from Dart to node-sass implementation
+});
 ```
 
 #### Stylus Plugins
