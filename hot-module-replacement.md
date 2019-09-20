@@ -52,6 +52,8 @@ With this adjustment, Laravel will do the work for you.
 If you run 'npm run hot' to enable hot reloading, the function will set the necessary `http://localhost:8080` base url.
 If, instead, you use `npm run dev` or `npm run production`, it'll use your domain as the base.
 
+> {note} If you configured versioning, you will need to [make it optional](https://laravel-mix.com/docs/master/versioning#optionally-versioning-files). Hot Module Replacement will not work with versioning enabled. By enabling versioning for production only, you will be able to use Hot Module Replacement in development.
+
 ### Usage on HTTPS
 
 If you develop your app on an HTTPS connection, your hot reloading scripts and styles must also be served via HTTPS.
