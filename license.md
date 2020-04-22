@@ -1,6 +1,6 @@
 # MIT License
 
-Copyright (c) 2019 Jeffrey Way <jeffrey@jeffrey-way.com>
+Copyright (c) 2020 Jeffrey Way <jeffrey@jeffrey-way.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

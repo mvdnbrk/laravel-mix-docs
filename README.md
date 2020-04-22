@@ -7,3 +7,9 @@
 # Laravel Mix Documentation
 
 You can find the online version of the Laravel Mix documentation at [https://laravel-mix.com/docs](https://laravel-mix.com/docs)
+
+## Sponsors
+
+ <a href="https://m.do.co/c/7a24c68b1e6d">
+ <img src="https://opensource.nyc3.cdn.digitaloceanspaces.com/attribution/assets/SVG/DO_Logo_horizontal_blue.svg" width="200px">
+ </a>
