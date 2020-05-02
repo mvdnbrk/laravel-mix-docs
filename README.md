@@ -21,3 +21,10 @@ You can find the online version of the Laravel Mix documentation at [https://lar
 <img src="https://laravel-mix.com/svg/fathom-analytics-logo.svg" height="50px">
 </a>
 </p>
+
+<p>
+<a href="https://ohdear.app">
+<img src="https://laravel-mix.com/svg/oh-dear-logo.svg" height="30px">
+</a>
+</p>
+
