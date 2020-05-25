@@ -24,6 +24,6 @@ You can find the online version of the Laravel Mix documentation at [https://lar
 
 <p>
 <a href="https://usefathom.com/ref/FI15PB">
-<img src="https://laravel-mix.com/svg/fathom-analytics-logo.svg" height="50px">
+<img src="https://laravel-mix.com/svg/fathom-analytics-logo.svg" height="30px">
 </a>
 </p>
