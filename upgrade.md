@@ -1,8 +1,8 @@
-# Upgrade to v4.0
+# Upgrade to v5.0
 
 ```bash
 npm remove laravel-mix
-npm install laravel-mix@^4.0.0 --save-dev
+npm install laravel-mix@^5.0.0 --save-dev
 ```
 
 After upgrading, if you encounter any issues related to `vue-template-compiler`, this is related to the fact that your installed version numbers of vue and `vue-template-compiler` must be identical. Update one or both to fix this issue.
