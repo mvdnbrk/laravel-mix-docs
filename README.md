@@ -6,7 +6,7 @@
 
 # Laravel Mix Documentation
 
-You can find the online version of the Laravel Mix documentation at [https://laravel-mix.com/docs](https://laravel-mix.com/docs)
+You can find the online version of the Laravel Mix documentation at [https://laravel-mix.com/docs](https://laravel-mix.com/docs).  
 The source code of the laravel-mix.com website it self can be found [here](https://github.com/mvdnbrk/laravel-mix.com).
 
 ## Sponsors
