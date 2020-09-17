@@ -7,6 +7,7 @@
 # Laravel Mix Documentation
 
 You can find the online version of the Laravel Mix documentation at [https://laravel-mix.com/docs](https://laravel-mix.com/docs)
+The source code of the laravel-mix.com website it self can be found [here](https://github.com/mvdnbrk/laravel-mix.com).
 
 ## Sponsors
 
@@ -28,10 +29,6 @@ You can find the online version of the Laravel Mix documentation at [https://lar
   </a>
 </p>
 
-<hr>
-
-The source code of the laravel-mix.com website it self can be found [here](https://github.com/mvdnbrk/laravel-mix.com).
-
 ## Credits
 
 - [Jeffrey Way](https://github.com/jeffreyway)
@@ -41,4 +38,3 @@ The source code of the laravel-mix.com website it self can be found [here](https
 ## License
 
 The MIT License (MIT). Please see [License File](license.md) for more information.
-
