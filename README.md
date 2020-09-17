@@ -40,5 +40,5 @@ The source code of the laravel-mix.com website it self can be found [here](https
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+The MIT License (MIT). Please see [License File](license.md) for more information.
 
