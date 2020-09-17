@@ -34,7 +34,11 @@ The source code of the laravel-mix.com website it self can be found [here](https
 
 ## Credits
 
-- [Mark van den Broek](https://github.com/mvdnbrk)
 - [Jeffrey Way](https://github.com/jeffreyway)
+- [Mark van den Broek](https://github.com/mvdnbrk)
 - [All Contributors](../../contributors)
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
