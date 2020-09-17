@@ -11,19 +11,19 @@ You can find the online version of the Laravel Mix documentation at [https://lar
 ## Sponsors
 
 <p>
-<a href="https://m.do.co/c/7a24c68b1e6d">
-<img src="https://opensource.nyc3.cdn.digitaloceanspaces.com/attribution/assets/SVG/DO_Logo_horizontal_blue.svg" height="35px">
- </a>
+  <a href="https://m.do.co/c/7a24c68b1e6d">
+    <img src="https://opensource.nyc3.cdn.digitaloceanspaces.com/attribution/assets/SVG/DO_Logo_horizontal_blue.svg" height="35px">
+  </a>
 </p>
 
 <p>
-<a href="https://ohdear.app">
-<img src="https://laravel-mix.com/svg/oh-dear-logo.svg" height="30px">
-</a>
+   <a href="https://ohdear.app">
+    <img src="https://laravel-mix.com/svg/oh-dear-logo.svg" height="30px">
+  </a>
 </p>
 
 <p>
-<a href="https://usefathom.com/ref/FI15PB">
-<img src="https://laravel-mix.com/svg/fathom-analytics-logo.svg" height="30px">
-</a>
+  <a href="https://usefathom.com/ref/FI15PB">
+    <img src="https://laravel-mix.com/svg/fathom-analytics-logo.svg" height="30px">
+  </a>
 </p>
