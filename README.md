@@ -27,3 +27,14 @@ You can find the online version of the Laravel Mix documentation at [https://lar
     <img src="https://laravel-mix.com/svg/fathom-analytics-logo.svg" height="30px">
   </a>
 </p>
+
+<hr>
+
+The source code of the laravel-mix.com website it self can be found [here](https://github.com/mvdnbrk/laravel-mix.com).
+
+## Credits
+
+- [Mark van den Broek](https://github.com/mvdnbrk)
+- [Jeffrey Way](https://github.com/jeffreyway)
+- [All Contributors](../../contributors)
+
