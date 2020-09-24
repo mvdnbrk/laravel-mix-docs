@@ -46,7 +46,7 @@ To **forward** file change notifications to the VM, simply install [vagrant-fsno
 vagrant plugin install vagrant-fsnotify
 ```
 
-Now you may [configure](https://github.com/adrienkohlbecker/vagrant-fsnotify#basic-setup) vagrant to use the plugin. In [Homestead](https://laravel.com/docs/5.4/homestead), your `Homestead.yaml` file would look something like this:
+Now you may [configure](https://github.com/adrienkohlbecker/vagrant-fsnotify#basic-setup) vagrant to use the plugin. In [Homestead](https://laravel.com/docs/homestead), your `Homestead.yaml` file would look something like this:
 
 ```yaml
 folders:
