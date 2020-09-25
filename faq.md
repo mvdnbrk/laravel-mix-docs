@@ -59,7 +59,7 @@ folders:
 
 Once your vagrant machine is started, simply run `vagrant fsnotify` on the host machine to forward all file changes to the VM. You may then run `npm run watch` inside the VM and have your changes automatically picked up.
 
-If you're still having trouble, [see here for additional troubleshooting tips](https://webpack.github.io/docs/troubleshooting.html#webpack-doesn-t-recompile-on-change-while-watching).
+If you're still having trouble, [see here for additional troubleshooting tips](https://webpack.js.org/configuration/watch/#changes-seen-but-not-processed).
 
 ### Why is it saying that an image in my CSS file can't be found in `node_modules`?
 
