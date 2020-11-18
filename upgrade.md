@@ -8,7 +8,6 @@
 -   [Autoprefixer Options](#autoprefixer-options)
 -   [Unused Library Extraction](#unused-library-extraction)
 -   [Automatically Ignored node_modules](#automatically-ignore-node-modules)
--   [Did We Miss Something?](#did-we-miss-something)
 
 ```bash
 npm install laravel-mix@next
