@@ -1,28 +1,28 @@
 # Installation
 
-Though Laravel Mix is optimized for Laravel usage, it may be used for any type of application.
+-   [Stand-Alone Projects](#stand-alone-projects)
+-   [Laravel Projects](#laravel-projects)
 
-### Laravel Project
+Though Laravel Mix was originally built for Laravel projects, it of course may be used for any type of application.
 
-Laravel ships with everything you need to get started. Simply:
+## Stand-Alone Projects
 
--   Install Laravel
--   Run `npm install`
--   Visit your `webpack.mix.js` file, and get started!
+### Step 1. Install Mix
 
-Now, from the command line, you may run `npm run watch` to watch your files for changes, and then recompile.
-
-> {note} You won't find a `webpack.config.js` file in your project root. By default, Laravel defers to the config file from this repo. However, should you need to configure it, you may copy the file to your project root, and then update your `package.json` NPM scripts accordingly: `cp node_modules/laravel-mix/setup/webpack.config.js ./`.
-
-### Stand-Alone Project
-
-Begin by installing Laravel Mix through NPM or Yarn, and then copying the example Mix file to your project root.
+Begin by installing Laravel Mix through NPM or Yarn.
 
 ```bash
 mkdir my-app && cd my-app
 npm init -y
 npm install laravel-mix --save-dev
-cp node_modules/laravel-mix/setup/webpack.mix.js ./
+```
+
+### Step 2. Create a Mix Configuration File
+
+Next, create a Mix configuration file within the root of your new project.
+
+```bash
+touch webpack.mix.js
 ```
 
 You should now have the following directory structure:
@@ -31,58 +31,43 @@ You should now have the following directory structure:
 -   `package.json`
 -   `webpack.mix.js`
 
-The `webpack.mix.js` file is your configuration layer on top of webpack.  
-Most of your time will be spent here.
+`webpack.mix.js` is your configuration layer on top of webpack. Most of your time will be spent here.
 
-Head over to your webpack.mix.js file:
+### Step 3. Define Your Compilation
 
-```js
-const mix = require('laravel-mix');
-
-mix.js('src/app.js', 'dist')
-   .sass('src/app.scss', 'dist')
-   .setPublicPath('dist');
-```
-
-Take note of the source paths.  
-You're free to amend the paths to match your preferred structure, but if you're happy with our defaults simply run the following command to create the files and directories:
-
-```bash
-mkdir src && touch src/app.{js,scss}
-```
-
-You're all set now.  
-Compile everything down by running:
-
-```bash
-node_modules/.bin/webpack --config=node_modules/laravel-mix/setup/webpack.config.js
-```
-
-You should now see:
-
--   `dist/app.css`
--   `dist/app.js`
--   `dist/mix-manifest.json` (Your asset dump file, which we'll discuss later.)
-
-Nice job! Now get to work on that project.
-
-#### NPM Scripts
-
-As a tip, consider adding the following NPM scripts to your `package.json` file, to speed up your workflow. Laravel installs will already include this.
+Open `webpack.mix.js` and add the following code:
 
 ```js
-"scripts": {
-    "dev": "npm run development",
-    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "npm run development -- --watch",
-    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "prod": "npm run production",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
-}
+// webpack.mix.js
+
+let mix = require('laravel-mix');
+
+mix.js('src/app.js', 'dist').setPublicPath('dist');
 ```
 
-To handle different environments, these scripts make use of [cross-env](https://www.npmjs.com/package/cross-env):
+At its core, Mix is an opinionated, fluent API on top of webpack. In the example above, we've instructed Mix to compile `src/app.js` and save it to the `dist/` directory. If you're working along, create `src/app.js` now, and populate it with a simple alert:
+
+```js
+// src/app.js
+alert('hello world');
+```
+
+Of course this is only a placeholder for your actual JavaScript code.
+
+### Step 4. Compile
+
+We're now ready to bundle up our assets. Mix provides a command-line program called `mix` which triggers the appropriate webpack build. Give it a run now.
 
 ```bash
-npm install cross-env --save-dev
+npx mix
 ```
+
+Congrats! You've created your first bundle. Create an HTML file, load your script, and you'll see an alert when the page loads.
+
+## Laravel Projects
+
+Laravel ships with everything you need to get started. Simply:
+
+-   Install Laravel (`laravel new app`)
+-   Run `npm install`
+-   Visit your `webpack.mix.js file`, and get started!
