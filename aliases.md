@@ -12,6 +12,8 @@ Path aliases are useful when you want to include files from a particular directo
 Mix can assist in this regard. Consider the following example:
 
 ```js
+const path = require('path')
+
 mix.alias({
     '@': path.join(__dirname, 'resources/js')
 });
@@ -26,6 +28,8 @@ In addition to aliasing paths you can also alias the definition of an entire mod
 This is acheieved by the following snippet:
 
 ```js
+const path = require('path')
+
 mix.alias({
     vue$: path.join(__dirname, 'node_modules/vue/dist/vue.esm-bundler.js')
 });
@@ -34,6 +38,8 @@ mix.alias({
 Here's another, more complete example of aliasing a common path and many dependencies to their ESM equivalents (instead of their default CommonJS imports):
 
 ```js
+const path = require('path')
+
 mix.alias({
     '@': path.join(__dirname, 'resources/js'),
     d3$: path.join(__dirname, 'node_modules/d3/index.js'),
