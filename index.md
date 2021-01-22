@@ -15,6 +15,7 @@
     - [Code Splitting](/docs/{{version}}/extract)
     - [Autoloading](/docs/{{version}}/autoloading)
     - [Hot Module Replacement](/docs/{{version}}/hot-module-replacement)
+    - [Node Polyfills (Process/Buffer)](/docs/{{version}}/legacy-node-polyfills)
 
 - ## CSS
     - [General CSS Compilation](/docs/{{version}}/css)
