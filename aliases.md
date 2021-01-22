@@ -3,7 +3,8 @@
 -   [Aliasing Paths](#aliasing-paths)
 -   [Aliasing Existing Modules](#aliasing-existing-modules)
 
-Mix offers the ability to configure aliases that get expanded when importing files. It supports aliasing specific paths and whole modules.
+Mix offers the ability to configure aliases that get expanded when importing files.
+It supports aliasing specific paths and whole modules.
 
 ### Aliasing Paths
 
