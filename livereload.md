@@ -5,7 +5,7 @@ While Laravel Mix ships with Browsersync support out of the box, you may prefer 
 ### Step 1. Install webpack-livereload-plugin
 
 ```bash
-npm install webpack-livereload-plugin@1 --save-dev
+npm install @kooneko/livereload-webpack-plugin --save-dev
 ```
 
 ### Step 2. Configure `webpack.mix.js`
@@ -13,7 +13,7 @@ npm install webpack-livereload-plugin@1 --save-dev
 Add the following lines to the bottom of your webpack.mix.js:
 
 ```js
-var LiveReloadPlugin = require('webpack-livereload-plugin');
+var LiveReloadPlugin = require('@kooneko/livereload-webpack-plugin');
 
 mix.webpackConfig({
     plugins: [new LiveReloadPlugin()]
