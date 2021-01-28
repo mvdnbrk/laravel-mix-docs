@@ -10,7 +10,7 @@
 -   [Automatically Ignored node_modules](#automatically-ignore-node-modules)
 
 ```bash
-npm install laravel-mix@next
+npm install laravel-mix@latest
 ```
 
 ## Review Your Dependencies
