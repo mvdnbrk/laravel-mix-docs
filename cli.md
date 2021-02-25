@@ -46,6 +46,14 @@ Hot module replacement is a webpack featured that gives supporting modules the a
 npx mix watch --hot
 ```
 
+If your development application is running on HTTPS, you can include the `--https` flag to serve the Hot module over HTTPS using a self-signed certificate to avoid a mixed content error in your browser. If you are using Chrome, you can go to `chrome://flags/#allow-insecure-localhost` in the URL bar and turn on this flag to automatically trust the certificate Mix generates; otherwise, you might need to visit `https://localhost:8080/` first to trust its certificate.
+
+<!-- NOTE: there is no equivalent option for Firefox https://bugzilla.mozilla.org/show_bug.cgi?id=1396221 -->
+
+```bash
+npx mix watch --hot --https
+```
+
 ### Compiling for Production
 
 When it comes time to build your assets for a production environment, Mix will set the appropriate webpack options, minify your source code, and optionally version your assets based on your Mix configuration file (`webpack.mix.js`). To build assets for production, include the `--production` flag - or the alias `-p` - to the Mix CLI. Mix will take care of the rest!
