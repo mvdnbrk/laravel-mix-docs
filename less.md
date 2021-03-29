@@ -8,8 +8,8 @@
 
 Here's a quick example to get you started. Imagine that you have the following Less file that needs to be compiled to vanilla CSS.
 
-```scss
-// src/app.scss
+```less
+// src/app.less
 @primary: grey;
 
 .app {
