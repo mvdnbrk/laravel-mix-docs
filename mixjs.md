@@ -127,6 +127,18 @@ mix.ts('resources/assets/js/app.ts', 'public/js/app.js');
 
 Of course, you'll still want to do the necessary tweeks like creating `tsconfig.json` file and installing [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped), but everything else should be taken care of.
 
+If you just migrated your existing project to TypeScript, you might notice that builds take much longer. In this case, make sure to read about [Faster builds](https://github.com/TypeStrong/ts-loader#faster-builds) in the `ts-loader` docs. Basically, you can add [`fork-ts-checker-webpack-plugin`](https://github.com/TypeStrong/fork-ts-checker-webpack-plugin) and configure it as follows:
+
+```js
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+
+mix.webpackConfig({
+  plugins: [new ForkTsCheckerWebpackPlugin()]
+});
+
+mix.ts('resources/assets/js/app.ts', 'public/js/app.js', { transpileOnly: true });
+```
+
 
 ### Plain JavaScript and Minification
 
