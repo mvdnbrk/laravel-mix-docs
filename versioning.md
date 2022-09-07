@@ -46,13 +46,13 @@ For Laravel projects, a solution is provided out of the box. Simply call its glo
 <html>
     <head>
         <title>App</title>
-        <link rel="stylesheet" href="/css/app.css?id=5ee7141a759a5fb7377a" />
+        <link rel="stylesheet" href="{{ mix('css/app.css') }}" />
     </head>
 
     <body>
         <div id="app"><h1>Hello World</h1></div>
 
-        <script src="/js/app.js?id=0441ad4f65d54589aea5"></script>
+        <script src="{{ mix('js/app.js') }}"></script>
     </body>
 </html>
 ```
@@ -65,13 +65,13 @@ you'll ultimately end up with something resembling:
 <html>
     <head>
         <title>App</title>
-        <link rel="stylesheet" href="{{ mix('css/app.css') }}" />
+        <link rel="stylesheet" href="/css/app.css?id=5ee7141a759a5fb7377a" />
     </head>
 
     <body>
         <div id="app"><h1>Hello World</h1></div>
 
-        <script src="{{ mix('js/app.js') }}"></script>
+        <script src="/js/app.js?id=0441ad4f65d54589aea5"></script>
     </body>
 </html>
 ```
