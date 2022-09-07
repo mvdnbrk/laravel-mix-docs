@@ -97,7 +97,7 @@ Compile Stylus files.
 mix.stylus('src/file.styl', 'dist/file.css');
 ```
 
-### `.extract(vendors?)`
+### `.extract(vendors?, output?)`
 
 Use webpack code-splitting to extract any or all vendor dependencies into their own files.
 
@@ -109,6 +109,13 @@ When no dependency is provided, Mix will bundle all imported dependencies from t
 
 ```js
 mix.js('src/file.js', 'dist/file.js').extract();
+```
+
+You can customize the output of the extraction using the output param. It would be relative to the public path.
+
+```js
+mix.js('src/file.js', 'dist/file.js').vue().extract(['vue'], 'js/v.js');
+mix.setPublicPath('public').js('src/file.js', 'dist/file.js').extract('js/v.js');
 ```
 
 ### `.version(files[]?)`
