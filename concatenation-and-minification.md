@@ -82,7 +82,7 @@ There are a few things worth noting here:
 mix.minify('path/to/file.js');
 ```
 
-#### Minify an Array of File
+#### Minify an Array of File's
 
 ```js
 mix.minify(['this/one.js', 'and/this/one.js']);
