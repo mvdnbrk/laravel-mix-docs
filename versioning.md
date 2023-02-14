@@ -75,3 +75,5 @@ you'll ultimately end up with something resembling:
     </body>
 </html>
 ```
+
+Note: if your assets are compiled to a subfolder within `public`, you need to pass a secondary parameter in to set the correct path. Ex: `<script src="{{ mix('js/app.js', 'your_subfolder') }}"></script>`
