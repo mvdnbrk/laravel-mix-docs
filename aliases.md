@@ -13,6 +13,8 @@ Path aliases are useful when you want to include files from a particular directo
 Mix can assist in this regard. Consider the following example:
 
 ```js
+var path = require('path');
+
 mix.alias({
     '@': path.join(__dirname, 'resources/js')
 });
